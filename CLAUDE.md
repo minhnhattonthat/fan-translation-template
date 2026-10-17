@@ -1,0 +1,22 @@
+# <Game title> (<platform>) English translation
+
+Skill: translate-retro-game (plugin, enabled in .claude/settings.json; `$SKILL` = the directory holding its SKILL.md). Read it before ROM, text or QA work.
+
+## Commands (run from repo root)
+- Build:    `<python -X utf8 build.py>`        -> build/<game>_en.<ext>
+- Check:    `<python -X utf8 tools/check.py>`  (tests + lint; the pre-commit hook runs this)
+- Smoke:    `python -X utf8 $SKILL/scripts/emu.py build/<game>_en.<ext> --out work/qa/smoke --route tools/routes/boot.txt --smoke`
+- Warp:     `python -X utf8 $SKILL/scripts/emu.py build/<game>_en.<ext> --out work/qa/warp --script tools/debug/warp.lua --var "SCENE='<name>'" --frames 900 --sheet` (scenes: `tools/debug/scenes.<ext>`; never ask the user to play to a scene)
+- Release:  `<python -X utf8 tools/release.py>` (patch + verify; never publish without the user)
+
+## Paths
+- Original ROM: `rom/<file>` (gitignored; hash in README). Emulator: this repo's own copy in `tools/<emulator>/` (release `<version>`, `<download URL>`; gitignored; settings in `tools/emu-config/`). Savestates: `work/states/`.
+- Text: `script/` (<format>). Tables: `tbl/`. Glossary + rulings: `glossary.md`. RE notes index: `docs/re/README.md`.
+
+## Rulings
+- Edit source files (.py .lua .asm .tbl .json) only with the file-edit tool; scripts here read and analyse, never `.replace()` and write back.
+- Honorifics / name order: <...>. Credits: <...>. Romanization: <...>. Abbreviations: <...>.
+- <project-specific gotchas: buffer limits, duplicate text sites, cold-boot needs, emulator file locks>
+
+## Status
+- Done: <...>. Next: <...>. Open bugs: <id - savestate - note>.
