@@ -19,3 +19,10 @@ tools/*/
 *.srm
 *.state
 *.ds[0-9]
+*.gb
+*.gbc
+*.chd
+*.mss
+*.sstate
+*.ppst
+evidence/private/

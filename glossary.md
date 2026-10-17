@@ -2,7 +2,7 @@
 
 Binding for every translator and reviewer. Agents propose additions in reports; only the controller edits this file.
 
-## Rulings (asked of the user once; record date)
+## Rulings (asked of the user once; options and reasons in docs/decisions.md)
 - Honorifics: <kept, hyphenated (Johannes-san) | dropped>. Name order: <JP | Western>.
 - Romanisation source: <official art / anime / Hepburn>.
 - Credits: <stay kanji | English>.

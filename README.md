@@ -15,6 +15,9 @@ no game data you can play; you need your own dump of the Japanese game.
 | `tools/` | Python build chain: extract, insert, lint, release. |
 | `tests/` | pytest suite (ROM-dependent tests skip when the ROM is absent). |
 | `docs/re/` | Reverse-engineering notes. |
+| `docs/decisions.md`, `docs/status.md` | Rulings with their reasons; current progress and open bugs. |
+| `docs/fonts.md` | Fonts used and their licences. |
+| `AGENTS.md` | Instructions for coding agents (`CLAUDE.md` points to it). |
 
 ## Build your own patched ROM
 
@@ -24,7 +27,7 @@ Needs Python 3.12+ and your own dump of the Japanese game.
 git clone https://github.com/minhnhattonthat/<repo>
 cd <repo>
 # copy your dump to: rom/<file>
-#   (<size> bytes, SHA-1 <sha1>)
+#   (<size> bytes, SHA-1 <sha1>; the build refuses any other dump, see rom.sha1)
 python -X utf8 tools/build.py                          # -> build/<game>_en.<ext>
 python -X utf8 tools/check.py                          # tests + text lint
 ```
