@@ -8,6 +8,7 @@ Skill: translate-retro-game (Claude Code: plugin, enabled in .claude/settings.js
 - Smoke:    `python -X utf8 $SKILL/scripts/emu.py build/<game>_en.<ext> --out work/qa/smoke --route tools/routes/boot.txt --smoke`
 - Warp:     `python -X utf8 $SKILL/scripts/emu.py build/<game>_en.<ext> --out work/qa/warp --script tools/debug/warp.lua --var "SCENE='<name>'" --frames 900 --sheet` (scenes: `tools/debug/scenes.<ext>`; never ask the user to play to a scene)
 - Release:  `<python -X utf8 tools/release.py>` (patch + verify; never publish without the user)
+- Clean:    `python -X utf8 tools/clean.py` (published projects: lists rebuildable/downloadable files; `--yes` deletes)
 
 ## Paths
 - Original ROM: `rom/<file>` (gitignored; SHA-1 in `rom.sha1`, checked by `tools/check_rom.py`). Emulator: this repo's own copy in `tools/<emulator>/` (release `<version>`, `<download URL>`; gitignored; settings in `tools/emu-config/`). Savestates: `work/states/`.
