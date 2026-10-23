@@ -8,6 +8,7 @@ __pycache__/
 tools/*/
 !tools/routes/
 !tools/debug/
+!tools/lua/
 *.sfc
 *.smc
 *.gba
