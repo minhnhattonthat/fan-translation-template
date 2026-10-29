@@ -9,6 +9,18 @@ no game data you can play; you need your own dump of the Japanese game.
 **Found a bug?** [Report it](../../issues/new/choose): untranslated text, typos, overflow, crashes. Attaching a savestate
 helps most.
 
+## Translation status
+
+| Part | Status |
+|---|---|
+| <Dialogue / story> | <Translated> |
+| <Menus, items, skills, system messages> | <Translated> |
+| <Title screen, logos, graphics with text> | <Translated / Left in Japanese> |
+| <Name entry> | <Translated / Japanese kana only> |
+| <Songs, voiced lines, credits roll> | <Left in Japanese> |
+
+Known issues: <none known / see [Issues](../../issues)>.
+
 ## What's here
 
 | Path | What it is |
