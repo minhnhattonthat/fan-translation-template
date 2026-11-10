@@ -33,7 +33,7 @@ Known issues: <none known / see [Issues](../../issues)>.
 | `docs/decisions.md`, `docs/status.md` | Rulings with their reasons; current progress and open bugs. |
 | `docs/fonts.md` | Fonts used and their licences. |
 | `AGENTS.md` | Instructions for coding agents (`CLAUDE.md` points to it). |
-| `.claude/agents/` | Subagent types (translator, reviewer, visual QA, playtester) with only the tools each needs. |
+| `.claude/agents/` | Subagent types (translator, reviewer, visual QA, playtester, graphics) with only the tools each needs. |
 
 ## Build your own patched ROM
 
